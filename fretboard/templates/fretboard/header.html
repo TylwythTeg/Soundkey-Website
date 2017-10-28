@@ -1,23 +1,75 @@
+
 <html lang="en">
     <head>
         <title>Fretboard Index</title>
-
-        {% load staticfiles %}
-        <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
-        <script type="text/javascript" src="{% static 'js/navbar.js' %}"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <link rel="stylesheet" href="/static/css/navbar.css">
+        <script type="text/javascript" src="/static/js/navbar.js"></script>
     </head>
 
     <body>
-        <div class="topnav" id="myTopnav">
-            <a href="#home">Home</a>
-            <a href="#fretboard">Fretboard</a>
-            <a href="#piano">Piano</a>
-            <a href="#about">About</a>
-            <!-- 15px is what is saving it -->
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
+        <div class = "top_nav">
+            <div class = "main_column">
+                <a style="" href="#">
+                    <div>Soundkey</div>
+                </a>
+                <a style="" href="#">
+                    <div>Fretboard</div>
+                </a>
+                
             </div>
-        {% block content %}
-        {% endblock %}
+            <div class = "menu_column">
+                <a class ="menu_click" style="display:block" href="#">
+                    <div class = "menu_button">
+                        &#9776;
+                    </div>
+                </a>
+                
+            
+            </div>
+        </div>
+        
+        <div class = "bottom_nav">
+            <a style="display:block" href="#">
+                <div class="Fretboard">Fretboard</div>
+            </a>
+            <a style="display:block" href="#">
+                <div class="Piano">Piano</div>
+            </a>
+            <a style="display:block" href="#">
+                    <div class="Dictionary">Dictionary</div>
+                </a>
+            
+            
+            <a style="display:block" href="#">
+                    <div class="About">About</div>
+                </a>
+            
+           
+            
+        </div>
+    
+    
+    
+    
+    
+    <ul>
+        <h2>Scales</h2>
+            <li>
+                <ul>
+                    <h3>Diatonic</h3>
+                    <li>Major (Ionian)</li>
+                    <li>Dorian</li>
+                    <li>Phrygian</li>
+                    <li>Lydian</li>
+                    <li>Mixolydian</li>
+                    <li>Natural Minor (Aeolian)</li>
+                    <li>Locrian</li>
+                </ul>
+            </li>
+    </ul>
+
     </body>
 
 
