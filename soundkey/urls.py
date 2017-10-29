@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^fretboard/', include('fretboard.urls')),
+    url(r'^piano/', include('piano.urls')),
 ]
