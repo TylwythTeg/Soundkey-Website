@@ -51,6 +51,8 @@ h2:active{
 .content {
     margin-top: 0;
     padding-top: 0;
+    margin-left: 0;
+    padding-left: 0;
 }
 .section {
     //width: 90%;
@@ -150,10 +152,19 @@ a:active {
 .navbar ul li {
     list-style: none;
 }
+.section ul li {
+    list-style: none;
+}
 
 .navbar ul {
+    //padding-left:0; 
+    padding-top: 0;
+}
+
+.sub_menu li {
     padding-left:0; 
     padding-top: 0;
+    list-style-type: none;
 }
 
 
