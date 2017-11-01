@@ -33,7 +33,7 @@
     flex: 3;
 }
 
-ul {text-align: center;}
+.top_nav ul {text-align: center;}
 
 h2 {
     text-align: center;
@@ -147,11 +147,11 @@ a:active {
 
 }
 
-ul li {
+.navbar ul li {
     list-style: none;
 }
 
-ul {
+.navbar ul {
     padding-left:0; 
     padding-top: 0;
 }

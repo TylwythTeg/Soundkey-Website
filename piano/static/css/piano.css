@@ -5,20 +5,24 @@ h1 {
 
 body {
     margin:0;
+    margin-bottom: 0;
 }
 
 .piano_body {
     position: relative;
-    //margin: 20px auto;
+    margin: 1em auto;
     background-color: rgb(40, 31, 18);
-    //width: 993px;
-    width: 100%;
-    //height: 300px;
-    height: 160px;
+
+    /* 312 px */
+    //width: 19.5em;
+    width: 97.5vw;
+    /* 96px */
+    //height:6em;
+    height: 32vw;
+    
     box-shadow: inset -1px 0px 11px 0px rgba(0, 0, 0, 0.75);
     
-    //padding: 3em 3em 0 3em;
-    padding: 2em 2% 0% 2%;
+    padding: 5vw 5vw 0 5vw;
     border-radius: 1em;
     
     /* Unselectable text */
@@ -48,10 +52,10 @@ body {
 
 .piano_body .key.white{
     color: grey;
-    //height: 16em;
-    height: 140px;
-    //width: 4em;
-    width: 7.142%;
+    //height: 5.2em;
+    height: 27.5vw;
+    //width: 1.28em;
+    width: 6.4vw;
     z-index: 1;
     border-left: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
@@ -59,21 +63,18 @@ body {
 }
 
 .piano_body .key.white.a,.b,.d,.g,.e {
-    //margin:0 0 0 -1em;
-    margin:0 0 0 -3.6%;
+    //margin:0 0 0 -0.69em;
+    margin:0 0 0 -3.45vw;
 }
 
 .piano_body .key.black{
-    //height: 8em;
-    height: 70px;
-    //width: 2em;
-    width: 3.57%;
-    //margin: 0 0 0 -1em;
-    //margin:0 0 0 -1.4%;
+    height: 13vw;
+    width: 3.208vw;
+    margin: 0 0 0 0em;
 
-    left: -1.8%;
+    left: -1.975%;
     z-index: 2;
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 0.1875em 0.1875em;
     box-shadow: -1px -1px 2px rgba(255,255,255,0.2) inset, 0 -5px 2px 3px rgba(0,0,0,0.6) inset, 0 2px 4px rgba(0,0,0,0.5);
     background-color: black;
     
@@ -87,15 +88,17 @@ body {
 .key.black .note {
     position: absolute;
     bottom: 10%;
-    width: 30px;
-    height: 30px;
-    width: 100%;
-    height: 15px;
+
+    height: 1.7em;
+    width: 1.7em;
+    line-height: 155%;
+    font-size: 35%;
+
+
+
+    left: 2%;
     border-radius: 50%;
     text-align: center;
-    line-height: 30px;
-    line-height: 15px;
-    font-size: 8px;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
     color: white;
     background-color: rgb(209, 129, 14);
@@ -105,32 +108,28 @@ body {
 .key.white .note {
     position: absolute;
     bottom: 10%;
-    width: 30px;
     
-    //margin: 0 1em;
     margin: 0 auto;
     margin-left: 25%;
-    height: 30px;
-
-    width: 50%;
-    height: 15px;
+    height: 1.7em;
+    width: 1.7em;
 
     border-radius: 50%;
     text-align: center;
-    line-height: 30px;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
     color: white;
     background-color: rgb(209, 129, 14);
-    line-height: 15px;
-    font-size: 8px;
+
+    line-height: 1.5em;
+    font-size: 0.35em;
 }
 
 * {
     box-sizing: border-box;
 }
 
-ul li:first-child { border-radius:5px 0 5px 5px; }
-ul li:last-child { border-radius:0 5px 5px 5px; }
+ul li:first-child { border-radius:5px 0 0px 5px; }
+ul li:last-child { border-radius:0 5px 5px 0px; }
 
 .piano_body .key.white:active {
     border-top:1px solid #777;
@@ -148,3 +147,77 @@ ul li:last-child { border-radius:0 5px 5px 5px; }
 .note.invisible {
     opacity: 0;
 }
+
+
+
+
+
+
+
+/*
+@media (min-width: 420px) {
+
+  .piano_body {
+    width: 25.59375em;
+    height: 7.875em;
+    padding: 1.025em 1.025em 0 1.025em;
+  }
+  .piano_body .key.white {
+    height: 7em;
+    width: 1.68em;
+  }
+
+  .piano_body .key.black {
+    height: 3.4125em;
+    width: 0.84218925em;
+  }
+
+  .key.white .note {
+    height: 2.23125em;
+    width: 2.23125em;
+    line-height: 1.969em;
+  }
+  .key.black .note {
+    height: 2.23125em;
+    width: 2.23125em;
+    line-height: 1.969em;
+  }
+
+  .piano_body .key.white.a,.b,.d,.g,.e {
+    margin:0 0 0 -0.85em;
+    }
+}
+
+@media (min-width: 550px) {
+
+  .piano_body {
+    width: 33.5155275em;
+    height: 10.31247em;
+    padding: 1.4em 1.4em 0 1.4em;
+  }
+  .piano_body .key.white {
+    height: 9.16664em;
+    width: 2.2em;
+  }
+
+  .piano_body .key.black {
+    height: 4.469em;
+    width: 1.10286em;
+  }
+
+  .key.white .note {
+    //height: 2.23125em;
+    //width: 2.23125em;
+    //line-height: 1.969em;
+  }
+  .key.black .note {
+    height: 2.23125em;
+    width: 2.23125em;
+    line-height: 1.969em;
+  }
+
+  .piano_body .key.white.a,.b,.d,.g,.e {
+    margin:0 0 0 -1.1131em;
+    }
+}
+*/

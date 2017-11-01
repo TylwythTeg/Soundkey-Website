@@ -26,7 +26,7 @@ var scale = {
     ]
 };
 
-
+alert(document.body.clientWidth);
 
 
 
