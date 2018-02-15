@@ -5,3 +5,7 @@ from django.shortcuts import HttpResponse
 def index(request):
     #return HttpResponse("hey")
     return render(request, "fretboard/fretboard.html")
+
+def flextest(request):
+    #return HttpResponse("hey")
+    return render(request, "fretboard/flextest.html")

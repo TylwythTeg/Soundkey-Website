@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)https://www.quackit.com/html/html_editors/scratchpad/preview.cfm?example=/css/flexbox/examples/flexbox_12_column_grid_2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Example</title>
+<style>
+.wrapper {
+  display: flex;
+}
+.wrapper > div {
+  font-size: 2vh;
+  color: white;
+  background: darkslategray;
+  margin: 0 .1em;
+  padding: .3em;
+  //border-radius: 3px;
+  flex: 1;
+  text-align: center;
+}
+
+.board {
+  background-color: rgb(139,69,19);
+  width: 100%;
+  left: 0;
+  margin: 0 auto;
+}
+
+
+
+.strings {
+  position: absolute;
+  top: 1.8vw;
+  height: 20vh;
+  left: 8px;
+  right: 8px;
+}
+/
+.strings .pluck {
+  position: relative;
+  content: "";
+  height: 1vw;
+  width: 100%;
+
+  margin-bottom: 2vw;
+}
+
+.strings .pluck:after {
+  content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0.25vw;
+    background-color: black;
+    position: relative;
+    margin-top: -6vw;
+    top: -1.4vw;
+    margin-left: 0vw;
+    overflow: visible;
+}
+
+.wrapper div:nth-child(1) {
+  flex: 0.5;
+}
+
+.strings .pluck2 {
+
+  position: absolute;
+
+  background-color: red;
+
+  height: 0.5vh;
+
+  width: 100%;
+}
+
+</style>
+</head><body>
+
+<div class = "board">
+
+<div class = "strings">
+  <div class = "pluck"></div>
+  <div class = "pluck"></div>
+  <div class = "pluck"></div>
+  <div class = "pluck"></div><div class = "pluck"></div>
+  <div class = "pluck"></div>
+
+
+</div>
+
+<div class="wrapper">
+  
+  
+<div> <div class = "string"></div>E</div><div><div class = "string"></div>F</div><div>F#</div><div>G</div><div>G#</div><div>A</div><div>A#</div><div>B</div><div>C</div><div>C#</div><div>D</div><div>D#</div><div>E</div></div><div class="wrapper">
+  <div>B</div>
+  <div>C</div>
+<div>C#</div><div>D</div><div>D#</div><div>E</div><div>F</div><div>F#</div><div>G</div><div>G#</div><div>A</div><div>A#</div><div>B</div></div><div class="wrapper">
+  <div>G</div>
+  <div>G#</div>
+<div>A</div><div>A#</div><div>B</div><div>C</div><div>C#</div><div>D</div><div>D#</div><div>E</div><div>F</div><div>F#</div><div>G</div></div>
+
+
+
+
+
+
+
+
+
+ <div class="wrapper">
+  
+  
+<div>D</div><div>D#</div><div>E</div><div>F</div><div>F#</div><div>G</div><div>G#</div><div>A</div><div>A#</div><div>B</div><div>C</div><div>C#</div><div>D</div></div><div class="wrapper">
+  
+  
+<div>A</div><div>A#</div><div>B</div><div>C</div><div>C#</div><div>D</div><div>D#</div><div>E</div><div>F</div><div>F#</div><div>G#</div><div>G</div><div>A</div></div><div class="wrapper">
+  
+  
+<div>E</div><div>F</div><div>F#</div><div>G</div><div>G#</div><div>A</div><div>A#</div><div>B</div><div>C</div><div>C#</div><div>D</div><div>D#</div><div>E</div></div>
+
+</div>
+
+</body></html>
